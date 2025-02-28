@@ -1,0 +1,187 @@
+2025-02-28 12:11:36,491 - __main__ - INFO - Arguments: Namespace(output_dir='outputs/quick_test', cache_dir='outputs/quick_test/cache', log_file='outputs/quick_test/quick_test.log', seed=42, model_name='TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T', sae_source='dummy', layers='6,7,8', num_examples=50, test_size=0.2, correct_only=False, batch_size=2, top_k=10, save_interval=5, dtype='float16', device='cuda')
+2025-02-28 12:11:36,491 - __main__ - INFO - Loading model and tokenizer: TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T
+2025-02-28 12:17:52,764 - huggingface_hub.file_download - WARNING - Error while downloading from https://cdn-lfs-us-1.hf.co/repos/76/59/7659cd749e5b0ec60843657e728277c585c415e101046525588de8d7a679367c/9dc1c1a8c6b29e153dea7aaf2ed6c4d242163489add0e7c14c23889745437be4?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1740728499&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MDcyODQ5OX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzc2LzU5Lzc2NTljZDc0OWU1YjBlYzYwODQzNjU3ZTcyODI3N2M1ODVjNDE1ZTEwMTA0NjUyNTU4OGRlOGQ3YTY3OTM2N2MvOWRjMWMxYThjNmIyOWUxNTNkZWE3YWFmMmVkNmM0ZDI0MjE2MzQ4OWFkZDBlN2MxNGMyMzg4OTc0NTQzN2JlND9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSoifV19&Signature=d3Yl-3jUJY6bYG8kFruCY0-rdu%7EsepIE5Lm4NSEpvNzsayKEMw%7E4zBWNToj4xzeWspCS1sgEoIxBtfcrqMRAynC1MW6Q4oeZoFTOlUv8LN9NNXgaGXo8wTw2DuvGpG4MX-rqFsagwSSr2iQ%7ERhuLA5lH47177Y1Q0dEh0FkGa6%7EQK3aznpwA3%7EBOXusWXOAyoN8tfWemkptH09H-pR5qWNuwPWrf6MOHLgooDBClTnSltTCHXCz01l3GQ8mY1-OI6JuCYymFiXX9aFRKVR8ZIqdiQ5q3wmht710%7ErghuYI%7Er6TgKZwXb%7E%7EeJCTgln7jTFctr83gtvWYjll8uGYl2qA__&Key-Pair-Id=K24J24Z295AEI9: HTTPSConnectionPool(host='cdn-lfs-us-1.hf.co', port=443): Read timed out.
+Trying to resume download...
+2025-02-28 12:28:37,043 - __main__ - INFO - Analyzing layers: [6, 7, 8]
+2025-02-28 12:28:37,043 - __main__ - INFO - Loading SAE decoder weights from source: dummy
+2025-02-28 12:28:37,043 - model.sae_utils - WARNING - Using dummy decoder weights for testing purposes
+2025-02-28 12:28:37,229 - __main__ - INFO - Preparing dataset with 50 examples
+2025-02-28 12:28:37,229 - data.dataset - INFO - Generating 50 subject-verb agreement examples
+2025-02-28 12:40:16,074 - __main__ - INFO - Arguments: Namespace(output_dir='outputs/quick_test', cache_dir='outputs/quick_test/cache', log_file='outputs/quick_test/quick_test.log', seed=42, model_name='TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T', sae_source='dummy', layers='6,7,8', num_examples=50, test_size=0.2, correct_only=False, batch_size=2, top_k=10, save_interval=5, dtype='float16', device='cuda')
+2025-02-28 12:40:16,074 - __main__ - INFO - Loading model and tokenizer: TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T
+2025-02-28 12:40:18,557 - __main__ - INFO - Analyzing layers: [6, 7, 8]
+2025-02-28 12:40:18,557 - __main__ - INFO - Loading SAE decoder weights from source: dummy
+2025-02-28 12:40:18,557 - model.sae_utils - WARNING - Using dummy decoder weights for testing purposes
+2025-02-28 12:40:18,765 - __main__ - INFO - Preparing dataset with 50 examples
+2025-02-28 12:40:18,766 - data.dataset - INFO - Loading dataset from cache: outputs/quick_test/cache/datasets/sva_dataset_50.json
+2025-02-28 12:40:18,800 - __main__ - INFO - Created dataset with 80 training and 20 test examples
+2025-02-28 12:40:18,800 - __main__ - INFO - Initializing Analytical Gradient
+2025-02-28 12:40:18,831 - model.analytical_gradient - INFO - Analytical Gradient initialized with 3 layers
+2025-02-28 12:40:18,831 - model.analytical_gradient - INFO - Using device: cuda, dtype: torch.float16
+2025-02-28 12:40:18,831 - __main__ - INFO - Running analysis on training set
+2025-02-28 12:40:18,831 - model.analytical_gradient - INFO - Starting analysis of 80 examples
+2025-02-28 12:40:19,466 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:19,467 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:19,467 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:19,535 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:19,535 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:19,535 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:19,622 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:19,623 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:19,623 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:19,709 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:19,710 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:19,710 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:19,796 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:19,797 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:19,797 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:19,883 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:19,884 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:19,884 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:19,885 - model.analytical_gradient - INFO - Processed 12 examples. Saving intermediate results...
+2025-02-28 12:40:20,009 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:20,009 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:20,009 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:20,096 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:20,096 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:20,096 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:20,183 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:20,183 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:20,183 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:20,270 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:20,270 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:20,270 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:20,357 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:20,357 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:20,357 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:20,358 - model.analytical_gradient - INFO - Processed 22 examples. Saving intermediate results...
+2025-02-28 12:40:20,445 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:20,445 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:20,445 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:20,532 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:20,532 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:20,533 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:20,619 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:20,619 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:20,619 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:20,706 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:20,707 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:20,707 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:20,794 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:20,794 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:20,794 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:20,795 - model.analytical_gradient - INFO - Processed 32 examples. Saving intermediate results...
+2025-02-28 12:40:20,882 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:20,882 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:20,882 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:20,969 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:20,969 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:20,969 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:21,056 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:21,056 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:21,057 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:21,144 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:21,144 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:21,144 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:21,231 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:21,231 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:21,231 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:21,232 - model.analytical_gradient - INFO - Processed 42 examples. Saving intermediate results...
+2025-02-28 12:40:21,319 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:21,319 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:21,319 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:21,406 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:21,406 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:21,406 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:21,494 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:21,494 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:21,494 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:21,581 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:21,581 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:21,581 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:21,668 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:21,668 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:21,668 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:21,669 - model.analytical_gradient - INFO - Processed 52 examples. Saving intermediate results...
+2025-02-28 12:40:21,756 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:21,756 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:21,756 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:21,843 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:21,844 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:21,844 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:21,930 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:21,931 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:21,931 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:22,018 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:22,018 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:22,018 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:22,105 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:22,105 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:22,105 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:22,106 - model.analytical_gradient - INFO - Processed 62 examples. Saving intermediate results...
+2025-02-28 12:40:22,192 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:22,193 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:22,193 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:22,280 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:22,280 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:22,280 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:22,367 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:22,367 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:22,367 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:22,454 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:22,454 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:22,454 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:22,541 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:22,541 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:22,541 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:22,542 - model.analytical_gradient - INFO - Processed 72 examples. Saving intermediate results...
+2025-02-28 12:40:22,629 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:22,629 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:22,629 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:22,716 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:22,717 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:22,717 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:22,804 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:22,804 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:22,804 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:22,891 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:22,891 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:22,891 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:22,917 - model.analytical_gradient - INFO - Analysis completed in 4.09 seconds
+2025-02-28 12:40:22,917 - model.analytical_gradient - INFO - Results saved to outputs/quick_test/cache/train_results_final.json
+2025-02-28 12:40:22,917 - __main__ - INFO - Running analysis on test set
+2025-02-28 12:40:22,917 - model.analytical_gradient - INFO - Starting analysis of 20 examples
+2025-02-28 12:40:22,980 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:22,980 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:22,980 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:23,067 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:23,067 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:23,067 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:23,154 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:23,155 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:23,155 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:23,242 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:23,242 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:23,242 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:23,329 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:23,329 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:23,329 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:23,416 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:23,416 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:23,416 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:23,417 - model.analytical_gradient - INFO - Processed 12 examples. Saving intermediate results...
+2025-02-28 12:40:23,504 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:23,505 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:23,505 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:23,592 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:23,592 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:23,592 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:23,679 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:23,679 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:23,679 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:23,766 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 6
+2025-02-28 12:40:23,766 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 7
+2025-02-28 12:40:23,766 - model.analytical_gradient - WARNING - Missing gradient or decoder for layer 8
+2025-02-28 12:40:23,792 - model.analytical_gradient - INFO - Analysis completed in 0.88 seconds
+2025-02-28 12:40:23,792 - model.analytical_gradient - INFO - Results saved to outputs/quick_test/cache/test_results_final.json
+2025-02-28 12:40:23,792 - __main__ - INFO - Analysis completed

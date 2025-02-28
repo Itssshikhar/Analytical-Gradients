@@ -1,0 +1,224 @@
+{
+  "train_results": {
+    "layer_6": {
+      "top_feature_indices": [
+        7,
+        6,
+        4,
+        5,
+        1,
+        0,
+        2,
+        3,
+        8,
+        9
+      ],
+      "top_feature_values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "decoder_shape": [
+        2048,
+        8192
+      ]
+    },
+    "layer_7": {
+      "top_feature_indices": [
+        7,
+        6,
+        4,
+        5,
+        1,
+        0,
+        2,
+        3,
+        8,
+        9
+      ],
+      "top_feature_values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "decoder_shape": [
+        2048,
+        8192
+      ]
+    },
+    "layer_8": {
+      "top_feature_indices": [
+        7,
+        6,
+        4,
+        5,
+        1,
+        0,
+        2,
+        3,
+        8,
+        9
+      ],
+      "top_feature_values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "decoder_shape": [
+        2048,
+        8192
+      ]
+    },
+    "metadata": {
+      "layers_analyzed": [
+        6,
+        7,
+        8
+      ],
+      "top_k": 10,
+      "timestamp": "2025-02-28 12:40:22"
+    }
+  },
+  "test_results": {
+    "layer_6": {
+      "top_feature_indices": [
+        7,
+        6,
+        4,
+        5,
+        1,
+        0,
+        2,
+        3,
+        8,
+        9
+      ],
+      "top_feature_values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "decoder_shape": [
+        2048,
+        8192
+      ]
+    },
+    "layer_7": {
+      "top_feature_indices": [
+        7,
+        6,
+        4,
+        5,
+        1,
+        0,
+        2,
+        3,
+        8,
+        9
+      ],
+      "top_feature_values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "decoder_shape": [
+        2048,
+        8192
+      ]
+    },
+    "layer_8": {
+      "top_feature_indices": [
+        7,
+        6,
+        4,
+        5,
+        1,
+        0,
+        2,
+        3,
+        8,
+        9
+      ],
+      "top_feature_values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "decoder_shape": [
+        2048,
+        8192
+      ]
+    },
+    "metadata": {
+      "layers_analyzed": [
+        6,
+        7,
+        8
+      ],
+      "top_k": 10,
+      "timestamp": "2025-02-28 12:40:23"
+    }
+  },
+  "args": {
+    "output_dir": "outputs/quick_test",
+    "cache_dir": "outputs/quick_test/cache",
+    "log_file": "outputs/quick_test/quick_test.log",
+    "seed": 42,
+    "model_name": "TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
+    "sae_source": "dummy",
+    "layers": "6,7,8",
+    "num_examples": 50,
+    "test_size": 0.2,
+    "correct_only": false,
+    "batch_size": 2,
+    "top_k": 10,
+    "save_interval": 5,
+    "dtype": "float16",
+    "device": "cuda"
+  },
+  "model_name": "TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
+  "num_examples": 50,
+  "test_size": 0.2
+}

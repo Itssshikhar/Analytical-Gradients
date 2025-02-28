@@ -1,0 +1,6 @@
+{
+  "layer_importance": "/root/MATS_8/outputs/visualizations/layer_importance.png",
+  "top_features": "/root/MATS_8/outputs/visualizations/top_features_layer_12.png",
+  "feature_comparison": "/root/MATS_8/outputs/visualizations/feature_importance_train_vs_test.png",
+  "importance_distribution": "/root/MATS_8/outputs/visualizations/importance_distribution.png"
+}

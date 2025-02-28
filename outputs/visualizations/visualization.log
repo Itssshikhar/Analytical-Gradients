@@ -1,0 +1,22 @@
+2025-02-28 12:41:14,260 - __main__ - INFO - Generating visualizations from /root/MATS_8/outputs/gemma-2-2b/combined_results.json
+2025-02-28 12:41:14,260 - __main__ - INFO - Saving visualizations to /root/MATS_8/outputs/visualizations
+2025-02-28 12:41:14,260 - __main__ - INFO - Successfully loaded results from /root/MATS_8/outputs/gemma-2-2b/combined_results.json
+2025-02-28 12:41:14,260 - __main__ - INFO - Creating model performance visualization...
+2025-02-28 12:41:14,261 - src.utils.visualization - WARNING - No probability data found in results. Cannot create model performance graph.
+2025-02-28 12:41:14,261 - __main__ - INFO - Creating layer importance visualization...
+2025-02-28 12:41:14,899 - src.utils.visualization - INFO - Layer importance graph saved to /root/MATS_8/outputs/visualizations/layer_importance.png
+2025-02-28 12:41:14,899 - __main__ - INFO - Creating top features visualization...
+2025-02-28 12:41:14,910 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-28 12:41:14,913 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-28 12:41:15,527 - src.utils.visualization - INFO - Top features graph for layer 12 saved to /root/MATS_8/outputs/visualizations/top_features_layer_12.png
+2025-02-28 12:41:15,527 - __main__ - INFO - Creating feature importance comparison visualization...
+2025-02-28 12:41:15,541 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-28 12:41:15,543 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-28 12:41:16,300 - src.utils.visualization - INFO - Feature importance comparison graph saved to /root/MATS_8/outputs/visualizations/feature_importance_train_vs_test.png
+2025-02-28 12:41:16,300 - __main__ - INFO - Creating importance distribution visualization...
+2025-02-28 12:41:16,978 - src.utils.visualization - INFO - Importance distribution graph saved to /root/MATS_8/outputs/visualizations/importance_distribution.png
+2025-02-28 12:41:18,344 - src.utils.visualization - INFO - Per-layer importance distribution graph saved to /root/MATS_8/outputs/visualizations/importance_distribution_by_layer.png
+2025-02-28 12:41:18,345 - __main__ - INFO - Creating dataset distribution visualization...
+2025-02-28 12:41:18,345 - src.utils.visualization - WARNING - Dataset distribution data not found. Cannot create pie chart.
+2025-02-28 12:41:18,345 - __main__ - INFO - Created 4 visualizations in /root/MATS_8/outputs/visualizations
+2025-02-28 12:41:18,345 - __main__ - INFO - Visualization index saved to /root/MATS_8/outputs/visualizations/visualization_index.json
