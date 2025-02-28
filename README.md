@@ -112,13 +112,13 @@ By default, the code uses dummy SAE weights for demonstration purposes. To use r
 
 ## Analyzing Results
 
-After running the analysis, you can analyze the results using the Jupyter notebook:
+After running the analysis, you can analyze the results using `generate_visualizations.py`:
 
 ```bash
-jupyter notebook notebooks/analytical_gradient_analysis.ipynb
+python generate_visualizations.py
 ```
 
-The notebook provides visualizations and analysis of:
+This provides visualizations and analysis of:
 - Feature importance by layer
 - Comparison between train and test feature rankings
 - Identification of the most important layers for the subject-verb agreement task
@@ -130,6 +130,8 @@ When run on Gemma 2 2B with subject-verb agreement tasks, this approach:
 1. Is faster and more memory-efficient than traditional SFC approaches
 2. Successfully identifies the same important features as traditional approaches
 3. Shows that middle layers (particularly 8-10) are most relevant for syntactic tasks like subject-verb agreement
+
+Can be viewed under `outputs/visualizations`
 
 ## References
 
